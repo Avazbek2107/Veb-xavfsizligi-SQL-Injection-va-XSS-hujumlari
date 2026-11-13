@@ -216,8 +216,9 @@ pre { margin: 0; padding: 12px 16px; overflow-x: auto; font-family: var(--mono);
 .q .q-text { font-weight: 600; margin-bottom: 6px; }
 .q .opt { display: block; width: 100%; text-align: left; margin: 5px 0; padding: 9px 14px; border: 1px solid #c8ccd2; background: #fff; color: var(--text); cursor: pointer; font-size: 15px; border-radius: 4px; }
 .q .opt:hover:not(:disabled) { border-color: var(--green); }
-.q .opt.right { background: #cdeedd; border-color: var(--green); }
-.q .opt.wrong { background: #ffd6d9; border-color: var(--note-red-b); }
+.q.answered .opt { background: #cdeedd; border-color: var(--green); opacity: 1; color: var(--text); }
+.q.answered .opt.right { background: #ffd6d9; border-color: var(--note-red-b); }
+.q .opt.wrong { background: #cdeedd; border-color: var(--green); border-width: 2px; }
 .q .explain { font-size: 14px; color: #333; margin-top: 6px; display: none; }
 .q.answered .explain { display: block; }
 .quiz-score { font-weight: 700; margin-top: 8px; }
